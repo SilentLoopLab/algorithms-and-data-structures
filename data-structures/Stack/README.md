@@ -1,6 +1,6 @@
 # Stack (Array-Backed) ⚡️
 
-A minimal, fast **LIFO** stack implemented in modern JavaScript (ES2022) with private fields.  
+A minimal, fast **LIFO** stack implemented in modern JavaScript (ES2022) with private fields.
 Amortized **O(1)** `push` / `pop`, clean iteration, and predictable growth.
 
 ---
@@ -58,8 +58,8 @@ console.log(s.isEmpty()); // true
 
 ## 🧠 Design Notes
 
-- Internal index `#size` stores the **top position**, starting from `-1` (empty).  
-  - After `push`, `#size` increments, and the value is written at `#data[#size]`.  
+- Internal index `#size` stores the **top position**, starting from `-1` (empty).
+  - After `push`, `#size` increments, and the value is written at `#data[#size]`.
   - After `pop`, the value at `#data[#size]` is returned and `#size` decrements.
 - `#ensureCapacity()` doubles `#capacity` and copies `[0..#size]` into the new buffer.
 
@@ -105,9 +105,9 @@ try { s.pop(); } catch (e) { console.log("pop empty:", e.message, "→ 'Stack is
 
 ---
 
-**Alen Yeghyan**  
-💻 Student & Web Developer  
-📍 Yerevan, Armenia  
+**Alen Yeghyan**
+💻 Student & Web Developer
+📍 Yerevan, Armenia
 ⚡ Passionate about algorithms, data structures, and elegant code design.
 
 
@@ -115,8 +115,7 @@ try { s.pop(); } catch (e) { console.log("pop empty:", e.message, "→ 'Stack is
 
 ## 🪶 License
 
-MIT © 2025 ALEN YEGHYAN
-
+MIT © 2025 **Alen Yeghyan** — *SilentLoopLab*  
 ---
 
 Happy stacking! 📚

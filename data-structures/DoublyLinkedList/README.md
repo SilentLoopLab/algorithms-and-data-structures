@@ -1,21 +1,21 @@
 # ⚡ DoublyLinkedList — Modern JavaScript Implementation
 
-A clean, efficient, and fully-featured **Doubly Linked List** built from scratch in pure JavaScript.  
-Inspired by `std::list` in C++ and `LinkedList` in Java — rewritten with a modern **ES2024+** touch.  
+A clean, efficient, and fully-featured **Doubly Linked List** built from scratch in pure JavaScript.
+Inspired by `std::list` in C++ and `LinkedList` in Java — rewritten with a modern **ES2024+** touch.
 Perfect for learning, algorithm practice, and building low-level systems in JS.
 
 ---
 
 ## ✨ Key Features
 
-- 💎 Elegant and modern **ES2024+** class design  
-- 🔒 True encapsulation using private fields (`#head`, `#tail`, `#size`)  
-- 🧭 Bidirectional traversal — forward and backward navigation  
-- ⚙️ Built-in stable **Merge Sort** (`O(n log n)`)  
-- 🔁 In-place reversal in `O(n)`  
-- 🧹 Safe memory cleanup — no dangling references  
-- 💥 Zero dependencies — pure JavaScript  
-- 🧠 Works seamlessly with TypeScript  
+- 💎 Elegant and modern **ES2024+** class design
+- 🔒 True encapsulation using private fields (`#head`, `#tail`, `#size`)
+- 🧭 Bidirectional traversal — forward and backward navigation
+- ⚙️ Built-in stable **Merge Sort** (`O(n log n)`)
+- 🔁 In-place reversal in `O(n)`
+- 🧹 Safe memory cleanup — no dangling references
+- 💥 Zero dependencies — pure JavaScript
+- 🧠 Works seamlessly with TypeScript
 
 ---
 
@@ -107,33 +107,33 @@ node doublyLinkedList.js
 
 ## ⚙️ Design Notes
 
-1. Optimized traversal (chooses shortest path from head or tail)  
-2. True encapsulation with private fields (`#head`, `#tail`, `#size`)  
-3. Fully iterable (`for...of`, `[...list]`, `Array.from`)  
-4. Safe node unlinking to prevent memory leaks  
-5. Merge sort implemented recursively for stability and clarity  
+1. Optimized traversal (chooses shortest path from head or tail)
+2. True encapsulation with private fields (`#head`, `#tail`, `#size`)
+3. Fully iterable (`for...of`, `[...list]`, `Array.from`)
+4. Safe node unlinking to prevent memory leaks
+5. Merge sort implemented recursively for stability and clarity
 
 ---
 
 ## 🧠 Author
 
-**Alen Yeghyan**  
-💻 Student & Web Developer  
-📍 Yerevan, Armenia  
+**Alen Yeghyan**
+💻 Student & Web Developer
+📍 Yerevan, Armenia
 ⚡ Passionate about algorithms, data structures, and elegant code design.
 
 ---
 
 ## 💬 Contribute
 
-Contributions and ideas are always welcome!  
+Contributions and ideas are always welcome!
 Feel free to open an issue or submit a pull request 🤝
 
 ---
 
 ## 🪶 License
 
-**MIT License © 2025 Alen Yeghyan**
+MIT © 2025 **Alen Yeghyan** — *SilentLoopLab*
 
 ---
 

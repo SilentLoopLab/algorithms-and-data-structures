@@ -1,18 +1,18 @@
 # ⚡ PriorityQueue — Modern JavaScript Min/Max Heap
 
-A **lightweight, high-performance priority queue** implemented in pure **modern ES2024 JavaScript**,  
-inspired by `std::priority_queue` from C++ and Python’s `heapq`.  
+A **lightweight, high-performance priority queue** implemented in pure **modern ES2024 JavaScript**,
+inspired by `std::priority_queue` from C++ and Python’s `heapq`.
 Supports both **min-heap** (default) and **max-heap** via custom comparator.
 
 ---
 
 ## ✨ Key Features
-🧱 **Binary heap** implementation (array-based)  
-⚙️ **Custom comparator** for min/max behavior  
-🚀 **O(log n)** insertion and removal  
-🔒 **Private fields** for safe encapsulation  
-🧹 **Zero dependencies** — clean and portable  
-🧠 **Fully tested** — includes a robust test suite  
+🧱 **Binary heap** implementation (array-based)
+⚙️ **Custom comparator** for min/max behavior
+🚀 **O(log n)** insertion and removal
+🔒 **Private fields** for safe encapsulation
+🧹 **Zero dependencies** — clean and portable
+🧠 **Fully tested** — includes a robust test suite
 
 ---
 
@@ -103,22 +103,22 @@ Expected output:
 ---
 
 ## 🧠 Design Highlights
-1. Pure ES2024 — no libraries, no dependencies.  
-2. Safe encapsulation with private fields (`#heap`, `#cmp`).  
-3. Custom comparator enables any ordering logic.  
-4. Consistent heap property after every mutation.  
+1. Pure ES2024 — no libraries, no dependencies.
+2. Safe encapsulation with private fields (`#heap`, `#cmp`).
+3. Custom comparator enables any ordering logic.
+4. Consistent heap property after every mutation.
 5. Thoroughly tested for edge cases and duplicates.
 
 ---
 
 ## 🪶 Author
-**Alen Yeghyan**  
-💻 Student & Web Developer  
-📍 Yerevan, Armenia  
+**Alen Yeghyan**
+💻 Student & Web Developer
+📍 Yerevan, Armenia
 ⚡ Passionate about algorithms, data structures, and clean code.
 
 ---
 
 ## 📜 License
-MIT License © 2025 Alen Yeghyan  
+MIT © 2025 **Alen Yeghyan** — *SilentLoopLab*
 ✨ Built with precision, testing, and minimalism.

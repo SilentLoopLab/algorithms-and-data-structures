@@ -1,18 +1,18 @@
 # ⚡ DynamicArray — Modern JavaScript Implementation
 
-A fast, clean, and resizable **Dynamic Array** built entirely in modern **ES2024 JavaScript**, inspired by `std::vector` from C++.  
+A fast, clean, and resizable **Dynamic Array** built entirely in modern **ES2024 JavaScript**, inspired by `std::vector` from C++.
 It combines low-level control with high-level usability — supporting both classic vector operations and modern JS methods.
 
 ---
 
 ## ✨ Key Features
-💎 **Efficient growth** — automatic capacity doubling  
-🔒 **Private fields** for true encapsulation (`#size`, `#capacity`, `#arr`)  
-⚙️ **Typed storage** — backed by a performant `Uint32Array`  
-🧩 **Full iterator protocol** — supports `for...of`, spread, and `Array.from()`  
-🧠 **Functional API** — includes `map`, `filter`, `reduce`, and more  
-💥 **Zero dependencies** — pure, minimal, and TypeScript-friendly  
-🚀 **C++-like behavior** — dynamic resizing, amortized O(1) push  
+💎 **Efficient growth** — automatic capacity doubling
+🔒 **Private fields** for true encapsulation (`#size`, `#capacity`, `#arr`)
+⚙️ **Typed storage** — backed by a performant `Uint32Array`
+🧩 **Full iterator protocol** — supports `for...of`, spread, and `Array.from()`
+🧠 **Functional API** — includes `map`, `filter`, `reduce`, and more
+💥 **Zero dependencies** — pure, minimal, and TypeScript-friendly
+🚀 **C++-like behavior** — dynamic resizing, amortized O(1) push
 
 ---
 
@@ -111,11 +111,11 @@ console.log(sum); // → 139
 ---
 
 ## 🧠 Design Highlights
-1. **Amortized Growth:** Resizes only when needed — typically doubling capacity.  
-2. **Memory Safety:** Unused cells are never exposed; iteration stops at logical size.  
-3. **Typed Buffer:** Uses `Uint32Array` for predictable layout and speed.  
-4. **Modern JS Feel:** Fully iterable, supports functional array patterns.  
-5. **C++ Spirit:** Low-level control, explicit resize, reserve, and capacity management.  
+1. **Amortized Growth:** Resizes only when needed — typically doubling capacity.
+2. **Memory Safety:** Unused cells are never exposed; iteration stops at logical size.
+3. **Typed Buffer:** Uses `Uint32Array` for predictable layout and speed.
+4. **Modern JS Feel:** Fully iterable, supports functional array patterns.
+5. **C++ Spirit:** Low-level control, explicit resize, reserve, and capacity management.
 
 ---
 
@@ -135,13 +135,13 @@ Expected output:
 ---
 
 ## 🪶 Author
-**Alen Yeghyan**  
-💻 Student & Web Developer  
-📍 Yerevan, Armenia  
+**Alen Yeghyan**
+💻 Student & Web Developer
+📍 Yerevan, Armenia
 ⚡ Passionate about algorithms, data structures, and clean code.
 
 ---
 
 ## 📜 License
-MIT License © 2025 Alen Yeghyan  
+MIT © 2025 **Alen Yeghyan** — *SilentLoopLab*
 ✨ Built with patience, precision, and a love for low-level programming.

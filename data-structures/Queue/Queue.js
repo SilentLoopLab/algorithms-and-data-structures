@@ -152,5 +152,5 @@ function testQueue() {
   console.log("\n=== Queue Test End ===");
 }
 
-testQueue();
+module.exports = { Queue };
 

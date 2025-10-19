@@ -133,9 +133,9 @@ console.log(q.back());    // "C"
 
 ---
 
-**Alen Yeghyan**  
-💻 Student & Web Developer  
-📍 Yerevan, Armenia  
+**Alen Yeghyan**
+💻 Student & Web Developer
+📍 Yerevan, Armenia
 ⚡ Passionate about algorithms, data structures, and elegant code design.
 
 
@@ -143,7 +143,7 @@ console.log(q.back());    // "C"
 
 ## 🪶 License
 
-MIT © 2025 ALEN YEGHYAN
+MIT © 2025 **Alen Yeghyan** — *SilentLoopLab*
 
 ---
 

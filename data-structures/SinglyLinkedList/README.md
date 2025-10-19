@@ -22,45 +22,45 @@ Inspired by std::forward_list from C++ and LinkedList from Java — built from s
 
 📘 Type Definition
 --------------------------------------------------------------------------------------------
-class SinglyLinkedList<T> { 
-    
-  constructor(iterable?: Iterable<T>); 
+class SinglyLinkedList<T> {
 
-  size(): number; 
+  constructor(iterable?: Iterable<T>);
 
-  isEmpty(): boolean; 
+  size(): number;
 
-  clear(): void; 
+  isEmpty(): boolean;
 
- 
-  front(): T | undefined; 
+  clear(): void;
 
- 
-  push_front(value: T): void; 
 
-  push_back(value: T): void; 
+  front(): T | undefined;
 
-  pop_front(): T | undefined; 
 
-  pop_back(): T | undefined; 
+  push_front(value: T): void;
 
- 
-  at(index: number): T | undefined; 
+  push_back(value: T): void;
 
-  insert(index: number, value: T): void; 
+  pop_front(): T | undefined;
 
-  erase(index: number): T | undefined; 
+  pop_back(): T | undefined;
 
-  remove(value: T, equals?: (a: T, b: T) => boolean): number; 
 
- 
-  reverse(): void; 
+  at(index: number): T | undefined;
 
-  sort(compareFn?: (a: T, b: T) => number): void; 
+  insert(index: number, value: T): void;
 
-  merge_list(other: SinglyLinkedList<T>, compareFn?: (a: T, b: T) => number): void; 
+  erase(index: number): T | undefined;
 
-  toArray(): T[]; 
+  remove(value: T, equals?: (a: T, b: T) => boolean): number;
+
+
+  reverse(): void;
+
+  sort(compareFn?: (a: T, b: T) => number): void;
+
+  merge_list(other: SinglyLinkedList<T>, compareFn?: (a: T, b: T) => number): void;
+
+  toArray(): T[];
 
   static fromArray<U>(arr: U[]): SinglyLinkedList<U>;
 
@@ -100,7 +100,7 @@ Running SinglyLinkedList tests...
 
 🧩 Algorithms Used
 --------------------------------------------------------------------------------------------
-|Algorithm  |	Purpose	          |  Complexity	      |      Stable.  |  
+|Algorithm  |	Purpose	          |  Complexity	      |      Stable.  |
 ----------------------------------------------------------------------
 |Merge Sort |	Sorting	          |  O(n log n)	      |      ✅ Yes   |
 |Merge List |	Combining lists	  |  O(n log n)	      |      ✅ Yes   |
@@ -130,6 +130,6 @@ Open an issue or submit a pull request 🤝
 
 🪶 License
 --------------------------------------------------------------------------------------------
-MIT License © 2025 Alen Yeghyan
+MIT © 2025 **Alen Yeghyan** — *SilentLoopLab*
 
 ✨ Built with curiosity, patience, and a love for clean code.

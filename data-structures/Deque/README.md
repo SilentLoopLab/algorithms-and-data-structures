@@ -1,18 +1,18 @@
-# BucketedDeque 🚀  
+# BucketedDeque 🚀
 *A cache-friendly, resizable, double-ended queue for modern JavaScript*
 
-> High-performance deque implemented as a **grid of fixed-size buckets**.  
+> High-performance deque implemented as a **grid of fixed-size buckets**.
 > Amortized **O(1)** pushes/pops on both ends, predictable memory layout, and clean iteration.
 
 ---
 
 ## ✨ Highlights
 
-- **O(1) amortized** `push_*` / `pop_*` at both ends  
-- **Bucketed layout** → better cache locality vs. monolithic arrays  
-- **Front & back growth** via `_ensureBucket(true|false)` (no full reallocation of items)  
-- **Iterable**: `for...of` works out of the box  
-- **Zero deps**: pure ES2022 with private fields (`#foo`)  
+- **O(1) amortized** `push_*` / `pop_*` at both ends
+- **Bucketed layout** → better cache locality vs. monolithic arrays
+- **Front & back growth** via `_ensureBucket(true|false)` (no full reallocation of items)
+- **Iterable**: `for...of` works out of the box
+- **Zero deps**: pure ES2022 with private fields (`#foo`)
 
 ---
 
@@ -162,15 +162,15 @@ console.log([...dq]);        // [5, 10]
 
 ## 🏗️ Growth Strategy
 
-- Front saturation → `_ensureBucket(true)` **doubles** the number of buckets and **prepends** empty rows, *shifting references* (not items) to the right.  
-- Back saturation  → `_ensureBucket(false)` **doubles** and **appends** empty rows at the end.  
+- Front saturation → `_ensureBucket(true)` **doubles** the number of buckets and **prepends** empty rows, *shifting references* (not items) to the right.
+- Back saturation  → `_ensureBucket(false)` **doubles** and **appends** empty rows at the end.
 - This avoids relocating all elements and keeps pushes/pops cheap.
 
 ---
 
 ## 🔬 Testing
 
-A ready-to-run stress test is included (`testBucketedDequeStress()` in your file).  
+A ready-to-run stress test is included (`testBucketedDequeStress()` in your file).
 Run with Node:
 
 ```bash
@@ -209,19 +209,19 @@ Tips:
 
 ## 🗺️ Roadmap
 
-- [ ] TypeScript `.d.ts` typings  
-- [ ] Optional `shrink()` to release unused leading/trailing buckets  
-- [ ] Configurable error messages / error types for `at()`  
-- [ ] Benchmarks & charts for common workloads  
+- [ ] TypeScript `.d.ts` typings
+- [ ] Optional `shrink()` to release unused leading/trailing buckets
+- [ ] Configurable error messages / error types for `at()`
+- [ ] Benchmarks & charts for common workloads
 - [ ] Optional `from(iterable)` ctor
 
 ## 🧠 Author
 
 ---
 
-**Alen Yeghyan**  
-💻 Student & Web Developer  
-📍 Yerevan, Armenia  
+**Alen Yeghyan**
+💻 Student & Web Developer
+📍 Yerevan, Armenia
 ⚡ Passionate about algorithms, data structures, and elegant code design.
 
 
@@ -229,22 +229,22 @@ Tips:
 
 ## 🪶 License
 
-MIT © 2025 ALEN YEGHYAN
+MIT © 2025 **Alen Yeghyan** — *SilentLoopLab*
 
 ---
 
 ## ❓ FAQ
 
-**Q: Why use buckets instead of a circular dynamic array?**  
+**Q: Why use buckets instead of a circular dynamic array?**
 A: Buckets let us grow **asymmetrically** on either side with **O(1)** amortized cost and avoid large memmoves; they also improve locality on sequential scans.
 
-**Q: What happens if I pass `new BucketedDeque(4)`?**  
+**Q: What happens if I pass `new BucketedDeque(4)`?**
 A: Per-bucket capacity falls back to **8** (only values **greater than 8** take effect).
 
-**Q: Does `clear()` keep my custom per-bucket length?**  
+**Q: Does `clear()` keep my custom per-bucket length?**
 A: No — it resets to the default geometry (per-bucket length = 8, initial buckets = 4).
 
-**Q: Is it safe to iterate while mutating?**  
+**Q: Is it safe to iterate while mutating?**
 A: Like most deques, iterating while mutating may skip/duplicate elements. Snapshot with `toArray()` or re-iterate after writes.
 
 ---
