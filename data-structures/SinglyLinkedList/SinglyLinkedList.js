@@ -199,7 +199,7 @@ class SinglyLinkedList {
         return { value: undefined, done: true };
       },
         [Symbol.iterator]() {
-         return this; 
+         return this;
         }
     };
   }
@@ -212,7 +212,7 @@ class SinglyLinkedList {
     while (this.head && eq(this.head.elem, value)) {
         const old = this.head;
         this.head = this.head.next;
-        old.next = null; 
+        old.next = null;
         --this.#size;
         ++removed;
     }
@@ -225,8 +225,8 @@ class SinglyLinkedList {
     while (curr.next) {
         if (eq(curr.next.elem, value)) {
         const del = curr.next;
-        curr.next = del.next; 
-        del.next = null;         
+        curr.next = del.next;
+        del.next = null;
         --this.#size;
         ++removed;
     } else {
@@ -279,11 +279,12 @@ class SinglyLinkedList {
       const left = merge_sort(head, cmp);
       const right = merge_sort(mid, cmp);
 
-      return merge(left, right, cmp); 
+
+      return merge(left, right, cmp);
     }
     this.head = merge_sort(this.head, cmp);
   }
-  
+
   merge_list(other, cmp) {
     if (!(other instanceof SinglyLinkedList)) {
       throw new TypeError("Argument must be a SinglyLinkedList");
