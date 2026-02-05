@@ -2,7 +2,7 @@ class DArray {
   #size = 0;
   #capacity = 0;
   #arr = null;
-  static CAP_EXPONENT = 2;
+  CAP_EXPONENT = 2;
 
   constructor(initialCapacity) {
     if (!(Number.isInteger(initialCapacity) && initialCapacity > 0)) {
